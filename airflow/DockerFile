@@ -1,0 +1,8 @@
+# Start from the official Apache Airflow image
+FROM apache/airflow:2.7.1
+
+# Set the working directory
+WORKDIR /usr/local/airflow
+
+# Install the Apache Spark provider for Airflow
+RUN pip install apache-airflow-providers-apache-spark
